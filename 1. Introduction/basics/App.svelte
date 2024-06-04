@@ -1,5 +1,5 @@
 <script>
-	let src = '/tutorial/image.gif';
+  let src = "/tutorial/image.gif";
 </script>
 
-<img {src} alt="A man dances."/>
+<img {src} alt="A man dances." />

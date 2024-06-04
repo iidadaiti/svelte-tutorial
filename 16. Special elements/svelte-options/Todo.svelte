@@ -1,28 +1,28 @@
-<svelte:options immutable/>
+<svelte:options immutable />
 
 <script>
-	import { afterUpdate } from 'svelte';
-	import flash from './flash.js';
+  import { afterUpdate } from "svelte";
+  import flash from "./flash.js";
 
-	export let todo;
+  export let todo;
 
-	let button;
+  let button;
 
-	afterUpdate(() => {
-		flash(button);
-	});
+  afterUpdate(() => {
+    flash(button);
+  });
 </script>
 
 <button bind:this={button} type="button" on:click>
-	{todo.done ? '👍' : ''}
-	{todo.text}
+  {todo.done ? "👍" : ""}
+  {todo.text}
 </button>
 
 <style>
-	button {
-		all: unset;
-		display: block;
-		cursor: pointer;
-		line-height: 1.5;
-	}
+  button {
+    all: unset;
+    display: block;
+    cursor: pointer;
+    line-height: 1.5;
+  }
 </style>

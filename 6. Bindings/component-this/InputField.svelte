@@ -1,9 +1,9 @@
 <script>
-	let input;
+  let input;
 
-	export function focus() {
-		input.focus();
-	}
+  export function focus() {
+    input.focus();
+  }
 </script>
 
 <input bind:this={input} />

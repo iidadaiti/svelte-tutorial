@@ -1,18 +1,18 @@
 <script>
-	let count = 0;
+  let count = 0;
 
-	function incrementCount() {
-        count += 1;
-	}
+  function incrementCount() {
+    count += 1;
+  }
 </script>
 
 <button on:click={incrementCount}>
-	Clicked {count}
-	{count === 1 ? 'time' : 'times'}
+  Clicked {count}
+  {count === 1 ? "time" : "times"}
 </button>
 
 <style>
-	button {
-		width:200px;
-	}
+  button {
+    width: 200px;
+  }
 </style>
